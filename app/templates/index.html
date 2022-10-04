@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Jane Doe | Portfolio</title>
+    <title>Sarah Humphrey | Portfolio</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -55,7 +55,7 @@
     <!-- Header -->
     <header class="masthead bg-primary text-white text-center">
         <div class="container">
-            <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="app/img/jane.jpg" alt="" />
+            <img class="img-fluid mb-3 d-block mx-auto rounded-circle" src="{{url_for('static', filename='humphrey.png')}}" alt="" />
             <h1 class="mb-0">Sarah Humphrey</h1>
             <hr />
             <h2 class="mb-0">
@@ -84,6 +84,17 @@
             <!-- Each project should include a header and a picture or animated gif.-->
             <div class="row">
                 <div class="col-md-6 col-lg-4">
+                    <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-5">
+                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                <p>HUD Housing Assistance</p>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{url_for('static', filename='hud.png')}}" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
                     <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-1">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -91,10 +102,10 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="app/img/portfolio/project1.jpg" alt="" />
+                        <img class="img-fluid" src="{{url_for('static', filename='wwa.png')}}" alt="" />
                     </a>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-3">
                     <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-2">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -102,7 +113,7 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="app/img/portfolio/project2.jpg" alt="" />
+                        <img class="img-fluid" src="{{url_for('static', filename='pha.png')}}" alt="" />
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -113,7 +124,7 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="app/img/portfolio/project3.jpg" alt="" />
+                        <img class="img-fluid" src="{{url_for('static', filename='biking.png')}}" alt="" />
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -124,18 +135,7 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="app/img/portfolio/project4.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-5">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <p>MechaCar Statistical Analysis</p>
-                                <i class="fas fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="app/img/portfolio/project5.jpg" alt="" />
+                        <img class="img-fluid" src="{{url_for('static', filename='ufo.png')}}" alt="" />
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -146,7 +146,7 @@
                                 <i class="fas fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="app/img/portfolio/project6.jpg" alt="" />
+                        <img class="img-fluid" src="{{url_for('static', filename='cra.png')}}" alt="" />
                     </a>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a class="btn btn-lg btn-outline-light" href="#">
+                <a class="btn btn-lg btn-outline-light" href="https://github.com/shumph10/Portfolio/raw/main/Sarah_Humphrey_Resume.pdf">
                     <i class="fas fa-download mr-2"></i>
                     Resume
                 </a>
@@ -224,7 +224,7 @@
                     University of Tennessee, Knoxville |
                     <span class="credential-date text-muted">Aug 2016 - Dec 2019</span>
                 </h2>
-                <p class="lead">B.A. Art History</p>
+                <p class="lead">B.S. Biochemical Cellular & Molecular Biology</p>
                 <p class="credential-description">
                     Graduated with Cum Laude honors in December, 2019, GPA 3.59. 
                     Taught multiple courses for first year and laboratory students. 
@@ -279,7 +279,7 @@
     <!-- Portfolio Modals: These are what open up when you click on each project. Replace the information as needed. -->
     <!-- Portfolio Modal 1 -->
     <div class="modal portfolio-modal " id="portfolio-modal-1">
-        <div class="portfolio-modal-dialog bg-black">
+        <div class="portfolio-modal-dialog bg-white">
             <a class="close-button portfolio-modal-dismiss" href="#" data-dismiss="modal">
                 <i class="fa fa-2x fa-times close-link"></i>
             </a>
@@ -290,7 +290,7 @@
                             World Weather Analysis
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project1.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='wwa.png')}}" alt="" />
                         <p class="mb-5">
                            Analysis of 2000 randomly generated city locations and weather condition for development of user input responsive travel plans.
                            Weather conditions were generated with OpenWeatherMapAPI queries and Pandas scripts created to filter dataframes upon user input. GMaps figures were then cretaed to visualize results and travel times.
@@ -321,7 +321,7 @@
                             Pewlett Hackard Analysis
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project2.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='pha.png')}}" alt="" />
                         <p class="mb-5">
                             Creation of SQL database to parse company data and establish number of employees nearing retirement, creation of potential solutions to ease transition of employees through establishment of mentorship program. 
                         </p>
@@ -353,7 +353,7 @@
                             Bikesharing Analysis
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project3.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='biking.png')}}" alt="" />
                         <p class="mb-5">
                             Analysis of bikesharing company’s data to understand and visualize trends in rides and user demographics for production of business model deployment in other locations.
                             Use of pandas for conversions of data types within the data set for best tableau visualizations. Production of visualization storyboard detailing findings using Tableau. 
@@ -387,7 +387,7 @@
                             UFO Research
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project4.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='ufo.png')}}" alt="" />
                         <p class="mb-5">
                             Creation of JavaScript and HTML scripts for production of website that allows user input filtering based on sighting descriptors using customized functions and listening events..
                         </p>
@@ -416,22 +416,22 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-secondary text-uppercase mb-0">
-                            MechaCar Statistical Analysis
+                            HUD Housing Assitance
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project5.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='hud.png')}}" alt="" />
                         <p class="mb-5">
-                            Comparison of MechaCar feature metrics to establish statistical significance of factors on miles per gallon.
+                            Our project focuses on affordable housing voucher's strain on governmental assistance programs as rent prices for many across the US skyrocket.
                         </p>
                         <p class="mb-5">
-                            Tools/Languages used: JavaScript, HTML, Visual Studio Code, CSS, Bootstrap
+                            Tools/Languages used: Python, HTML, W3, Keras Tuner, Google CoLab
                         </p>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="https://github.com/shumph10/MechaCar_Statistical_Analysis">
+                        <a class="btn btn-primary portfolio-modal-dismiss" href="https://github.com/shumph10/Housing_Assistance_Analysis">
                             GitHub
                         </a>
 
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="https://github.com/shumph10/MechaCar_Statistical_Analysis/tree/main/R_Analysis/01_Demo">
-                            View Code</a>
+                        <a class="btn btn-primary portfolio-modal-dismiss" href="https://analysis-housing-assistance.herokuapp.com/">
+                            View Dashboard</a>
                     </div>
                 </div>
             </div>
@@ -451,7 +451,7 @@
                             Credit Risk Analysis
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project6.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="{{url_for('static', filename='cra.png')}}" width="350" height="200" alt="" />
                         <p class="mb-5">
                             Use of supervised machine learning to predict credit risk of potential applicants and what factors had the most influence on model classification.
                             Data was scaled and sampled through different methods from Imbalanced- and SciKit-learn to tailor the most accurate and precise results.
