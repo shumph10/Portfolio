@@ -1,6 +1,6 @@
 # Portfolio
 
-[Website}(https://sarahhumphreyportfolio.herokuapp.com/)
+[Website](https://sarahhumphreyportfolio.herokuapp.com/)
 
 -----------------------------------
 
