@@ -2,6 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* .header .header-img{
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;    
+} */
+
 h1,
 h2,
 h3,
@@ -107,6 +114,7 @@ header.masthead h2 {
 .portfolio .portfolio-item {
     position: relative;
     display: block;
+    /* width: auto; */
     max-width: 25rem;
     margin-bottom: 15px;
 }
