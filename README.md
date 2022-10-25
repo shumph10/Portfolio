@@ -1,6 +1,6 @@
 # Portfolio
 
-Here are the files for my personal resume and portfolio websites. The final website for the portfolio will be available soon.
+[Website](https://sarahhumphreyportfolio.herokuapp.com/)
 
 -----------------------------------
 
